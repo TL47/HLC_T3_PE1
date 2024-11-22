@@ -10,6 +10,7 @@ h1 {
     color: white;
     background-color: #3498db;
     margin-left: 40px;
+    text-align: center;
 }
 
 .btn1:hover {
@@ -20,6 +21,7 @@ h1 {
     color: white;
     margin-left: 40px;
     background-color: #3498db;
+    text-align: center;
 }
 
 .btn2:hover {
@@ -30,12 +32,9 @@ h1 {
     color: white;
     margin-left: 40px;
     background-color: #3498db;
+    text-align: center;
 }
 
 .btn3:hover {
     background-color: #1abc9c;
-}
-
-form {
-    border-radius: 10px;
 }
