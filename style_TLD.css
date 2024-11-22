@@ -1,0 +1,41 @@
+h1 {
+    margin-left: 11%;
+}
+.menu {
+    background-color: #4476a8;
+    margin-right: 90%;
+}
+
+.btn1 {
+    color: white;
+    background-color: #3498db;
+    margin-left: 40px;
+}
+
+.btn1:hover {
+    background-color: #1abc9c;
+}
+
+.btn2 {
+    color: white;
+    margin-left: 40px;
+    background-color: #3498db;
+}
+
+.btn2:hover {
+    background-color: #1abc9c;
+}
+
+.btn3 {
+    color: white;
+    margin-left: 40px;
+    background-color: #3498db;
+}
+
+.btn3:hover {
+    background-color: #1abc9c;
+}
+
+form {
+    border-radius: 10px;
+}

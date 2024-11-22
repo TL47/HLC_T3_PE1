@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href=" https://fonts.google.com/specimen/Klee+One?query=Klee+One&categoryFilters=Feeling:%2FExpressive%2FCute;Calligraphy:%2FScript%2FHandwritten">
+  <link rel="stylesheet" href="style_TLD.css">
+  <title>Triana</title>
+</head>
+<body>
+
+  <!-- Contenido de la página -->
+<header>
+  <div class="tab1"></div>
+  <div class="menu">
+    <button class="btn1">Inicio</button><br><br>
+    <button class="btn2">Información</button><br><br>
+    <button class="btn3">Formulario</button>
+  </div>
+</header>
+    <h1>Inicio</h1>
+    <p>Hola, mi nombre es Triana López Delgado y esta es la Práctica Evaluable 1 de HLC </p>
+    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/0*XFKvzn30CglSpb3o" height="250" width="350">
+</div>
+  <div class="tab2">
+    <h1>Información</h1>
+    <p>El examen de HLC consta de las siguentes partes:</p>
+    <ul>
+      <li>Un menú lateral</li>
+      <li>Un formulario</li>
+      <li>Varios elementos html como:</li>
+      <ul>
+        <li>Títulos.</li>
+        <li>Imágenes.</li>
+        <li>Listas.</li>
+      </ul>
+    </ul>
+    <p>Algunos datos importantes sobre la práctica son:</p>
+    <div class="tab">
+      <table border="1">
+        <thead>
+            <tr>
+              <th>Formas de entrega</th>
+              <th>Tiempo</th>
+              <th>Calificación</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GitHub y GitHub Pages</td>
+            <td>2 horas</td>
+            <td>Numéricas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="tab3">
+    <h1>Formulario</h1>
+    <form>
+      <br><label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" required minlength="3"><br><br>
+
+      <label for="correo">Correo electrónico:</label><br>
+      <input type="email" id="correo" required><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje"></textarea>
+      
+      <div class="tab">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+  
+  <!-- Fin contenido de la página -->
+
+  <script>
+    function showTabById(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.id === tabId);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.menu button');
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const tabId = button.id.replace('btn', 'tab');
+          showTabById(tabId);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
